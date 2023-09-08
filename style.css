@@ -1,0 +1,60 @@
+h1{
+    color:rgba(215, 194, 221, 0.61);
+}
+
+.user-name{
+    color: black;
+    font: bold;
+}
+
+#about-container{
+}
+
+#brand img{
+    width: 50%;
+    margin: 0 auto;
+
+}
+#brand{
+    display: flex;
+    align-items: center;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#users-container{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    padding: 0 10px;
+    background-color:#f1f5f9;
+}
+
+.user-card img{ 
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+}
+
+.user-card img.gifanao{
+    display: none;
+}
+
+.user-card img:hover .gifanao{
+    display: block;
+}
