@@ -1,21 +1,29 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    padding: 0;
+    background-color:#302e2b;
+    color: white;
+}
+
+
 h1{
     color:rgba(215, 194, 221, 0.61);
 }
 
-.user-name{
-    color: black;
-    font: bold;
+
+main{
+    padding: 0 10px;
 }
 
-#about-container{
-}
-
-#brand img{
+#banner img{
     width: 50%;
     margin: 0 auto;
 
 }
-#brand{
+#banner{
     display: flex;
     align-items: center;
 }
@@ -25,36 +33,106 @@ html, body{
     padding: 0;
 }
 
-#users-container{
-    display: flex;
-    flex-direction: row;
-    gap: 70px;
-}
-
-*{
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-body{
-    padding: 0 10px;
-    background-color:#f1f5f9;
-}
-
-.user-card img{ 
-    height: 300px;
-    width: 300px;
-    border-radius: 10px;
-}
-
 h2{
     display: flex;
     align-items: center;
 }
 
-.user-card img.gifanao{
+
+header{
+    background-color: #262522;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+
+}
+
+header h1{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+#BotaoLance{
+    padding: 5px 10px;
+    width: 150px;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+#AreaBotao{
+    text-align: center;
+
+}
+
+#BotaoLance:hover{
+    color: green;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+#container-anoes{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilo para o card dos anoes*/
+
+.card-anao{
+    background-color: #262522;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(22, 22, 22);
+    aspect-ratio: 1/1.5;
+}
+/* Estilo para imagem do card dos anoes */
+
+.card-anao img{ 
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Faz o gif do anao aparecer quando pasas por cima */
+
+
+.card-anao-images:hover .gifanao {
+    display: block;
+}
+
+/*  Esconde o gifs do anao*/
+
+.gifanao{
     display: none;
 }
 
-.user-card img:hover .gifanao{
-    display: block;
+/* Faz a imagem sumir */
+
+.card-anao-images:hover .card-anao-image {
+    display: none;
 }
+
+/* estilo para o nome do anao */
+
+.card-anao-name{
+    font-size: 25px;
+    color: #606958 ;
+    text-align: center;
+}
+
+
+/* descriçao do anao */
+
+.card-anao-descriçao{
+    opacity: 0.8;
+    text-align: center;
+}
+
+

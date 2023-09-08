@@ -3,57 +3,93 @@
 
 <head>
 
+    <link rel="shortcut icon" href="imagens/logo_anoes-removebg-preview.png" type="image/x-icon">
+<!-- Configura o ocone da pagina -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LLL</title>
+    <title>Small Market</title>
+    <!-- Configura o titulo da pagina -->
+
+        <!-- Traz o arquivo de fontes do google fontes, no caso nunito sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Une o css com o html
+     -->
 </head>
 
 <body>
-
-
-    <div id="about-container">
-        <div id="brand">
+    <!-- Cabeçalho da pagina -->
+    <header>
+        <!-- Logo do Cabeçalho -->
+        <img src="imagens/logo_anoes-removebg-preview.png" width="60px"/>
+        <h1>Small Market</h1>
+        <!-- Titulo Pricipal/Nome da Pagina -->
+    </header>
+    
+    <!-- Conteudo principal da pagina -->
+    <main>
+        <div id="banner">
             <img src="imagens/Capa anao.png" width="320px">
         </div>
-        <h2>Compre aqui seu anão</h2>
-        <p id="date">Você merece o melhor, e é por isso que eu apresento os Anões. Com anos de pesquisa, inovação e dedicação à qualidade, este é o produto que irá transformar a sua vida.</p>
+        <h2>Mercado onde os preços sao baixos</h2>
+        <p>Você merece o melhor, e é por isso que eu apresento os Anões. Com anos de pesquisa, inovação e dedicação à qualidade, este é o produto que irá transformar a sua vida.</p>
         <h4>Anões</h4>
-        <div id="users-container">
-            <div class="user-card">
-                <img class="gifanao" src="gifs/pLr9ge.gif">
-                <img src="imagens/Anao gaules.png">
-                <p class="user-name"><b>Anao gaules</b></p>
-                <p class="user-role">Cacheceiro e dança bem, nas horas vagas faz lives</p>
-        
+        <!-- Area em que estao os cards do anoes -->
+        <div id="container-anoes">
+            <!-- card do anao -->
+            <div class="card-anao">
+                <!-- area das imagens dos anoes -->
+                <div class="card-anao-images">
+                    <!-- gif do anao que fica escondido e so aparece quando passa o mouse por cima da area das imagens-->
+
+                    <img class="gifanao" src="gifs/pLr9ge.gif">
+                    <!-- Imagem do anao -->
+                    <img class="card-anao-image" src="imagens/Anao gaules.png">
+                </div>
+                <!-- Nome do anao -->
+                <p class="card-anao-name"><b>Anao gaules</b></p>
+                <!-- Descriçao do anao -->
+                <p class="card-anao-descriçao">Cacheceiro e dança bem, nas horas vagas faz lives</p>
+
             </div>
             <div>
-                <div class="user-card">
+                <div class="card-anao">
                     <img src="imagens/Anao bombeiro.png" width="330px">
-                    <p class="user-name"><b> Fisiculturista</b></p>
-                    <p class="user-role">Faz poses para ganhar a vida</p>
+                    <p class="card-anao-name"><b> Fisiculturista</b></p>
+                    <p class="card-anao-descriçao">Faz poses para ganhar a vida</p>
                 </div>
             </div>
-        </div>
-        <div class="user-card">
-            <img src="imagens/Anao viado.png" width="330px">
-            <p class="user-name"><b>Anao Viado</b></p>
-            <p class="user-role">Nem te conto o que ele faz...</p>
-        </div>
+            <div class="card-anao">
+                <div class="card-anao-images">
+                    <img class="gifanao" src="gifs/tokinho-blow-kiss.gif">
+                    <img class="card-anao-image" src="imagens/Anao viado.png" alt="Um anao viado">
+                </div>
+                <p class="card-anao-name"><b>Anao Viado</b></p>
+                <p class="card-anao-descriçao">Cacheceiro e dança bem, nas horas vagas faz lives</p>
 
-        <div class="user-card">
-            <img src="imagens/anao balanço geral.jpg" width="330px">
-            <p class="user-name"><b>Anao Balanço Geral</b></p>
-            <p class="user-role">Apresentador</p>
+            </div>
+    
+            <div class="card-anao">
+                <img src="imagens/anao balanço geral.jpg" width="330px">
+                <p class="card-anao-name"><b>Anao Balanço Geral</b></p>
+                <p class="card-anao-descriçao">Apresentador</p>
+            </div>
+    
+            <div class="card-anao">
+                <img src="imagens/anao estiloso.webp" width="330px">
+                <p class="card-anao-name"><b>Anao Estiloso</b></p>
+                <p class="card-anao-descriçao">Se veste bem</p>
+            </div>
         </div>
-
-        <div class="user-card">
-            <img src="imagens/anao estiloso.webp" width="330px">
-            <p class="user-name"><b>Anao Estiloso</b></p>
-            <p class="user-role">Se veste bem</p>
+       <div id="AreaBotao">
+            <button id="BotaoLance">
+                De seu lance
+            </button>
         </div>
-
-
+        </main>
 </body>
 
 </html>
